@@ -4,7 +4,7 @@ var db = require('../lib/db');
 exports = module.exports = {};
 
 exports.findAll = function(req, res) {
-    db.query('select * from users', function(err,rows){
+    db.query('select * from users', function(err, rows) {
         res.send({'users':rows});
     });
 };
